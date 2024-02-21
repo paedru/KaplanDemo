@@ -178,15 +178,14 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
-				 <configuration>
-					 <release>11</release>					
-					<!--
-					 <source>1.7</source>
+				 <!-- <configuration>
+					<release>11</release>					
+					<source>1.7</source>
 					<target>1.7</target>
 					<useIncrementalCompilation>true</useIncrementalCompilation>
-					<compilerArgument>-proc:none</compilerArgument> -->
-				</configuration> 
-		</plugin>			
+					<compilerArgument>-proc:none</compilerArgument>
+				</configuration> -->
+			</plugin>			
 		   <plugin>  
 				<groupId>org.codehaus.mojo</groupId>  
 				<artifactId>exec-maven-plugin</artifactId>  
