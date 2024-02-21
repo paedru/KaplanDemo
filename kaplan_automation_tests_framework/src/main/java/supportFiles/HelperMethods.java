@@ -9,6 +9,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
+import org.apache.maven.model.Model;
+import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
+import java.io.FileReader;
+import java.io.IOException;
 
 //import main.Initiator;
 
@@ -410,6 +414,24 @@ public class HelperMethods {
 }
 
 	public static String getRunEngineFileName(){
+		 MavenXpp3Reader reader = new MavenXpp3Reader();
+         Model model;
+		try {
+			model = reader.read(new FileReader("pom.xml"));
+		
+         String version = model.getVersion(); // Example: Get project version
+         String someProperty = model.getProperties().getProperty("artifactstagingdirectory");
+         System.out.println(someProperty);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String excelpath = "";		 
 		try{			
 			String runenginefile = System.getProperty("runenginename")+".xlsx";			
@@ -418,14 +440,8 @@ public class HelperMethods {
 				runenginefile = GlobalConstants.defaultrunenginename;
 				System.out.println("Run Engine File Name in case of null is "+GlobalConstants.defaultrunenginename);
 			}
-			System.out.println("*********Excel Path is "+GlobalConstants.projectDirectoryPath+"/"+runenginefile);
-			excelpath = GlobalConstants.projectDirectoryPath+"/"+runenginefile;	
+			System.out.println("*********Excel Path is "+GlobalConstants.projectDirectoryPath+"/"+someProperty+"/"+runenginefile);
+			excelpath = GlobalConstants.projectDirectoryPath+"/"+someProperty+"/"+runenginefile;	
 			ExcelUtils.setExcelFile(excelpath);
 
-		}
-		catch(Exception e){
-			System.out.println(e);
-		}
-		return excelpath;
-	}
 }
