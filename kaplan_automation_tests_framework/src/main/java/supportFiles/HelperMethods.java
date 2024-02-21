@@ -2,6 +2,7 @@ package supportFiles;
 
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.Map;
 import java.util.Vector;
 import org.apache.maven.model.Model;
 import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
+import org.apache.maven.shared.utils.xml.pull.XmlPullParserException;
+
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -429,6 +432,9 @@ public static String getRunEngineFileName(){
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (org.codehaus.plexus.util.xml.pull.XmlPullParserException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
