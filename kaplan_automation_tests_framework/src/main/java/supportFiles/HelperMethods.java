@@ -421,7 +421,7 @@ public class HelperMethods {
 		
          String version = model.getVersion(); // Example: Get project version
          String someProperty = model.getProperties().getProperty("artifactstagingdirectory");
-         System.out.println(someProperty);
+         System.out.println("Property value is"+someProperty);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
