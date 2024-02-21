@@ -3,6 +3,10 @@ package main;
 import java.io.File;
 import java.util.Map;
 import java.util.Vector;
+import org.apache.maven.model.Model;
+import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
+import java.io.FileReader;
+import java.io.IOException;
 
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -21,6 +25,13 @@ public class Initiator {
 	public static void main(String[] args) {
 		
 		try{
+
+			MavenXpp3Reader reader = new MavenXpp3Reader();
+	            Model model = reader.read(new FileReader("pom.xml"));
+	            String version = model.getVersion(); // Example: Get project version
+	            String someProperty = model.getProperties().getProperty("artifactstagingdirectory");
+	            System.out.println(someProperty);
+			
 		/*String runenginefile = System.getProperty("runenginename")+".xlsx";
 		
 		System.out.println("RUNENGINE FILE NAME IS: "+runenginefile);
