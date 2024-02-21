@@ -2,29 +2,29 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-21T14:04:53 IST" name="Regression_Automation_Test" finished-at="2024-02-21T14:05:09 IST" duration-ms="15997">
+  <suite started-at="2024-02-21T18:57:26 IST" name="Regression_Automation_Test" finished-at="2024-02-21T18:57:41 IST" duration-ms="14820">
     <groups>
       <group name="Smoke">
-        <method signature="Smoke.toCheckLogin2()[pri:0, instance:testSuites.Smoke@6ca0256d]" name="toCheckLogin2" class="testSuites.Smoke"/>
-        <method signature="Smoke.toCheckLogin1()[pri:0, instance:testSuites.Smoke@6ca0256d]" name="toCheckLogin1" class="testSuites.Smoke"/>
-        <method signature="Smoke.toCheckLogin3()[pri:0, instance:testSuites.Smoke@6ca0256d]" name="toCheckLogin3" class="testSuites.Smoke"/>
+        <method signature="Smoke.toCheckLogin2()[pri:0, instance:testSuites.Smoke@267f474e]" name="toCheckLogin2" class="testSuites.Smoke"/>
+        <method signature="Smoke.toCheckLogin1()[pri:0, instance:testSuites.Smoke@267f474e]" name="toCheckLogin1" class="testSuites.Smoke"/>
+        <method signature="Smoke.toCheckLogin3()[pri:0, instance:testSuites.Smoke@267f474e]" name="toCheckLogin3" class="testSuites.Smoke"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-02-21T14:04:53 IST" name="All" finished-at="2024-02-21T14:05:09 IST" duration-ms="15997">
+    <test started-at="2024-02-21T18:57:26 IST" name="All" finished-at="2024-02-21T18:57:41 IST" duration-ms="14820">
       <class name="testSuites.Smoke">
-        <test-method signature="toCheckLogin2()[pri:0, instance:testSuites.Smoke@6ca0256d]" started-at="2024-02-21T14:04:53 IST" name="toCheckLogin2" finished-at="2024-02-21T14:05:01 IST" duration-ms="7429" status="PASS">
+        <test-method signature="toCheckLogin2()[pri:0, instance:testSuites.Smoke@267f474e]" started-at="2024-02-21T18:57:26 IST" name="toCheckLogin2" finished-at="2024-02-21T18:57:32 IST" duration-ms="5634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toCheckLogin2 -->
-        <test-method signature="toCheckLogin3()[pri:0, instance:testSuites.Smoke@6ca0256d]" started-at="2024-02-21T14:05:01 IST" name="toCheckLogin3" finished-at="2024-02-21T14:05:05 IST" duration-ms="4302" status="PASS">
+        <test-method signature="toCheckLogin3()[pri:0, instance:testSuites.Smoke@267f474e]" started-at="2024-02-21T18:57:32 IST" name="toCheckLogin3" finished-at="2024-02-21T18:57:36 IST" duration-ms="4441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toCheckLogin3 -->
-        <test-method signature="toCheckLogin1()[pri:0, instance:testSuites.Smoke@6ca0256d]" started-at="2024-02-21T14:05:05 IST" name="toCheckLogin1" finished-at="2024-02-21T14:05:09 IST" depends-on-methods="testSuites.Smoke.toCheckLogin2" duration-ms="4195" status="PASS">
+        <test-method signature="toCheckLogin1()[pri:0, instance:testSuites.Smoke@267f474e]" started-at="2024-02-21T18:57:36 IST" name="toCheckLogin1" finished-at="2024-02-21T18:57:41 IST" depends-on-methods="testSuites.Smoke.toCheckLogin2" duration-ms="4549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toCheckLogin1 -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:testSuites.Smoke@6ca0256d]" started-at="2024-02-21T14:05:09 IST" name="suiteTearDown" finished-at="2024-02-21T14:05:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:testSuites.Smoke@267f474e]" started-at="2024-02-21T18:57:41 IST" name="suiteTearDown" finished-at="2024-02-21T18:57:41 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
