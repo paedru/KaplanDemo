@@ -27,7 +27,7 @@ public class Initiator {
 		try{
 
 			MavenXpp3Reader reader = new MavenXpp3Reader();
-	            Model model = reader.read(new FileReader("pom.xml"));
+	            Model model = reader.read(new FileReader("./pom.xml"));
 	            String version = model.getVersion(); // Example: Get project version
 	            String someProperty = model.getProperties().getProperty("artifactstagingdirectory");
 	            System.out.println(someProperty);
