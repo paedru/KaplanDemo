@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Regression_Automation_Test" parallel="methods">
+  <parameter name="SiteAddress" value="http://www.google.com"/>
+  <test name="All">
+    <classes>
+      <class name="testSuites.SmokeTests">
+        <methods>
+			<!--<include name="toDemo"/>-->
+          <include name="toCheckLogin1"/>
+          <include name="toCheckLogin2"/>
+          <include name="toCheckLogin3"/>
+        </methods>
+      </class> <!-- testSuites.SmokeTests -->
+    </classes>
+  </test> <!-- All -->
+</suite> <!-- Regression_Automation_Test -->
