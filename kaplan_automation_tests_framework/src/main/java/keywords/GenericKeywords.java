@@ -156,7 +156,8 @@ public class GenericKeywords extends SeleniumDriverSetup
 			{
 				
 										
-				testConfig.getDriver().get(GlobalConstants.URL);			
+				//testConfig.getDriver().get(GlobalConstants.URL);			
+				testConfig.getDriver().get("http://www.google.com");			
 					
 				LOG.report_INFO("Launch Application", "Application "+ GlobalConstants.URL +" is launched");
 				
