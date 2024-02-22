@@ -26,8 +26,8 @@ public class Initiator {
 		
 		try{
 		String stagingArea = System.getProperty("artifactstagingdirectory");
-			String SourcesDirectory= = System.getProperty("SourcesDirectory=");
-			String SourceBranchName= = System.getProperty("SourceBranchName=");
+			String SourcesDirectory = System.getProperty("SourcesDirectory=");
+			String SourceBranchName = System.getProperty("SourceBranchName=");
 			String SourceBranch = System.getProperty("SourceBranch");
 			String Repository = System.getProperty("Repository");
 			String repoID = System.getProperty("repoID");
