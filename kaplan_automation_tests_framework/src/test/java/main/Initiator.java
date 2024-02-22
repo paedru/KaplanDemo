@@ -74,7 +74,8 @@ public class Initiator {
 			
 			//Create Extent Report
 			
-		GlobalConstants.currentReportFolderName="Report_"+GlobalVariables.getTimestamp();
+		//GlobalConstants.currentReportFolderName="Report_"+GlobalVariables.getTimestamp();
+		GlobalConstants.currentReportFolderName="ExtentReport";
 		GlobalConstants.currentReportFolderPath= GlobalConstants.exec_report_path+GlobalConstants.currentReportFolderName;		
 		new File(GlobalConstants.currentReportFolderPath).mkdir();		
 		GlobalConstants.executionReportName=GlobalConstants.currentReportFolderPath + "/REPORT.html";
