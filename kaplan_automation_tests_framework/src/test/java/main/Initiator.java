@@ -25,9 +25,10 @@ public class Initiator {
 	public static void main(String[] args) {
 		
 		try{
-
+		String stagingArea = System.getProperty("artifactstagingdirectory");
+		 System.out.println("Staging folder name is"+stagingArea);
 			MavenXpp3Reader reader = new MavenXpp3Reader();
-	            Model model = reader.read(new FileReader("./pom.xml"));
+	            Model model = reader.read(new FileReader(stagingArea+"/pom.xml"));
 	            String version = model.getVersion(); // Example: Get project version
 	            String someProperty = model.getProperties().getProperty("artifactstagingdirectory");
 	            System.out.println(someProperty);
