@@ -33,9 +33,14 @@ public class Initiator {
 			String repoID = System.getProperty("repoID");
 			String localpath = System.getProperty("localpath");
 			String ContainerId = System.getProperty("ContainerId");
+			String RepositoryName = System.getProperty("RepositoryName");
+			
+
+			
 			String DefaultWorkingDirectory = System.getProperty("DefaultWorkingDirectory");
 			String Workspace = System.getProperty("Workspace");
 			
+			System.out.println("Workspace folder name is"+RepositoryName);
 			System.out.println("Workspace folder name is"+Workspace);
 			System.out.println("DefaultWorkingDirectory folder name is"+DefaultWorkingDirectory);
 			System.out.println("Staging folder name is"+stagingArea);
