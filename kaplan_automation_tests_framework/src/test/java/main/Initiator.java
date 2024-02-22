@@ -26,6 +26,23 @@ public class Initiator {
 		
 		try{
 		String stagingArea = System.getProperty("artifactstagingdirectory");
+			String SourcesDirectory= = System.getProperty("SourcesDirectory=");
+			String SourceBranchName= = System.getProperty("SourceBranchName=");
+			String SourceBranch = System.getProperty("SourceBranch");
+			String Repository = System.getProperty("Repository");
+			String repoID = System.getProperty("repoID");
+			String localpath = System.getProperty("localpath");
+			String ContainerId = System.getProperty("ContainerId");
+
+			System.out.println("Staging folder name is"+stagingArea);
+			System.out.println("Staging folder name is"+SourcesDirectory);
+			System.out.println("Staging folder name is"+SourceBranchName);
+			System.out.println("Staging folder name is"+SourceBranch);
+			System.out.println("Staging folder name is"+Repository);
+			System.out.println("Staging folder name is"+localpath);
+			System.out.println("Staging folder name is"+ContainerId);
+
+			
 		 System.out.println("Staging folder name is"+stagingArea);
 			MavenXpp3Reader reader = new MavenXpp3Reader();
 	            Model model = reader.read(new FileReader(stagingArea+"/pom.xml"));
