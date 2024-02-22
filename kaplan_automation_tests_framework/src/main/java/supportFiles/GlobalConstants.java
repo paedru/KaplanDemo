@@ -41,6 +41,7 @@ public class GlobalConstants {
 	
 	//public static final String excelpath = projectDirectoryPath+"/RunEngine.xlsx";
 	public static final String defaultrunenginename = "\\"+projectRootFolder+"\\"+"RunEngine.xlsx";
+	public static final String defaultrunenginename2 = "RunEngine.xlsx";
 	//public static final String excelpath = projectDirectoryPath+"/"+Initiator.runenginefile;
 	public static final String testng_xml_path = projectDirectoryPath+"/testit.xml";
 	public static final String exec_report_path=projectDirectoryPath+"/reportLogs/";
