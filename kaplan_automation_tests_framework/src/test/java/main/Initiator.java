@@ -34,12 +34,14 @@ public class Initiator {
 			String localpath = System.getProperty("localpath");
 			String ContainerId = System.getProperty("ContainerId");
 			String RepositoryName = System.getProperty("RepositoryName");
+			String projectRootFolder = System.getProperty("projectRootFolder");
 			
 
 			
 			String DefaultWorkingDirectory = System.getProperty("DefaultWorkingDirectory");
 			String Workspace = System.getProperty("Workspace");
 			
+			System.out.println("Project folder name is"+projectRootFolder);
 			System.out.println("Workspace folder name is"+RepositoryName);
 			System.out.println("Workspace folder name is"+Workspace);
 			System.out.println("DefaultWorkingDirectory folder name is"+DefaultWorkingDirectory);
