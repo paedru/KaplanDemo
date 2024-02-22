@@ -440,15 +440,16 @@ public static String getRunEngineFileName(){
 	//	}
 		String excelpath = "";		 
 		try{			
-			String runenginefile = System.getProperty("runenginename")+".xlsx";			
+			String runenginefile = System.getProperty("runenginename")+".xlsx";
+			String runenginefile2 = GlobalConstants.defaultrunenginename2;
 			System.out.println("RUNENGINE FILE NAME IS: "+runenginefile);			
 			if(runenginefile.contains("null")){
 				runenginefile = GlobalConstants.defaultrunenginename;
 				System.out.println("Run Engine File Name in case of null is "+GlobalConstants.defaultrunenginename);
 			}
-			System.out.println("*********Excel Path is "+GlobalConstants.projectDirectoryPath+runenginefile);
+			System.out.println("*********Excel Path is "+GlobalConstants.projectDirectoryPath+runenginefile2);
 			//excelpath = GlobalConstants.projectDirectoryPath+"/"+runenginefile;	
-			excelpath = GlobalConstants.projectDirectoryPath+runenginefile;	
+			excelpath = GlobalConstants.projectDirectoryPath+runenginefile2;	
 			ExcelUtils.setExcelFile(excelpath);
 
 		}
