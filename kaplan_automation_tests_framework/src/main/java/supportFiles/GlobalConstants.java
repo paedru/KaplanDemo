@@ -62,7 +62,7 @@ public class GlobalConstants {
 	
 	//*** CONTANSTS FOR RUN ENGINE ***
 	
-	public static final String testng_xml_filename = "\\"+projectRootFolder+"\\"+"testit.xml";
+	public static final String testng_xml_filename = System.getProperty("user.dir")+"\\"+projectRootFolder+"\\"+"testit.xml";
 	public static final String sheet ="LoginTC";
 	public static final String sheet_name_modules = "Modules";
 	public static final String sheet_name_login_tc = "LoginTC";
