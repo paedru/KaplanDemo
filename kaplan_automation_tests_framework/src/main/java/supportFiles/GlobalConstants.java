@@ -28,7 +28,7 @@ public class GlobalConstants {
 	//*** FRAMEWORK PARAMETERS
 	public static String projectRootFolder = System.getProperty("projectRootFolder");
 	public static final String projectDirectoryPath=System.getProperty("user.dir")+"\\"+projectRootFolder; 
-	public static String URL=null;
+	public static String URL="http://www.google.com";
 	public static String browser=null;
 	public static ExtentReports extent;
 	public static String operatingSystem=null;
